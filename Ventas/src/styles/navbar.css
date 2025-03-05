@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+/* ✅ Navbar */
+.navbar {
+  @apply bg-blue-600 p-4 text-white;
+}
+
+/* ✅ Contenedor */
+.container {
+  @apply max-w-7xl mx-auto flex justify-between items-center;
+}
+
+/* ✅ Logo */
+.logo {
+  @apply text-2xl font-bold;
+}
+
+/* ✅ Menú en escritorio */
+.menu {
+  @apply hidden md:flex space-x-6 text-lg;
+}
+
+.menu li a {
+  @apply hover:text-gray-200 transition;
+}
+
+/* ✅ Botón Menú Hamburguesa */
+.menu-button {
+  @apply text-3xl text-white focus:outline-none md:hidden;
+}
+
+/* ✅ Menú Móvil */
+.mobile-menu {
+  @apply md:hidden bg-blue-700 text-white text-lg space-y-4 p-4 hidden;
+}
+
+.mobile-menu.open {
+  @apply block;
+}
+
+.mobile-menu ul {
+  @apply space-y-4;
+}
+
+.mobile-menu li a {
+  @apply block py-2 border-b border-blue-500;
+}
